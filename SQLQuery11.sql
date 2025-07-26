@@ -1,3 +1,5 @@
+--Müştəri Adlarının Duplicated Olmadığı Üzrə Tranzaksiyalar
+
 SELECT *
   FROM Texas tr
   JOIN dim_customers cust

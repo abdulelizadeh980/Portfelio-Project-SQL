@@ -1,3 +1,5 @@
+--Hər Müştəri Üçün Tranzaksiya İlinə Görə Bölünməsi
+
 select First_Name,Last_Name, year(TransactionStartDateTime) as Year , sum(TransactionAmount) as Sum
 from Texas tx
 right join Dim_Customers cus

@@ -1,3 +1,5 @@
+--Hər Müştərinin Ən Çox Tranzaksiya Etmiş Olduğu ATM
+
 with count_transaction as (
 	select tx.CardholderID, cus.ATMID, count(tx.TransactionID) as Transaction_Count
 	from Texas tx 

@@ -1,3 +1,5 @@
+--Hər Müştərinin Ən Yüksək Tranzaksiya Məbləğinin 2-ci Yüksək Məbləğdən Fərqi (yalnız iki və daha çox tranzaksiya edən müştərilər)
+
 with rank_table as (
 select tx.CardholderID, tx.TransactionAmount,
 Dense_rank () over (Partition by tx.CardholderID order by tx.TransactionAmount desc) as RN
